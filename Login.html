@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link href="/login.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="Tab">
+        <nav>
+            <a href="#"><img src="" alt="" style="float: left; margin: 20px;"> </a>
+            <input type="text" class="search" placeholder="search">
+            <a href="Home.html">หน้าหลัก</a>
+            <a href="2">ประเภทเครื่องดื่ม</a>
+            <a href="3">แบรนด์เครื่องดื่ม</a>
+            <a href="4">ความรู้เพิ่มเติม</a>
+            <a href="5">โปรโมชัน</a>
+            <a href="6">คำถามเพิ่มเติม</a>
+            <a href="7"><img src="" alt="" ></a>
+        </nav>
+    </div>
+
+
+
+
+    <form action="Login.html" class="card">
+        <div class="sign-in">Sign in</div>
+        <i class="fas fa-user-circle" id="logo"></i>
+        <div class="login-form">
+            <i class="fas fa-user" id="logo-input"></i>
+            <input type="text" class="input" id="username">
+            <span data-placeholder="Username"></span>
+        </div>
+
+        <div class="login-form">
+            <i class="fas fa-lock" id="logo-input"></i>
+            <input type="password" class="input" id="password">
+            <span data-placeholder="password"></span>
+        </div>
+        <p>Don' have account ? <a href="#">Sign up</a></p>
+        <input type="submit" class="btn-submit" value="login">
+    </form>
+
+    <footer>
+        <div>
+            <img src="Logo1.png" alt="" style="float:left; margin-right: 20px;">
+        </div>
+        <div>
+            <a href="#">หน้าหลัก</a>
+            <a href="#">ประเภทเครื่องดื่ม</a>
+            <a href="#">แบรนด์เครื่องดื่ม</a>
+            <a href="#">ความรู้เพิ่มเติม</a>
+            <a href="#">โปรโมชัน</a>
+            <a href="#">ติดต่อ</a>
+        </div>
+        
+        <div class="icon">
+            <a href="https://discord.com/"><img src="Discord.png"></a>
+            <a href="https://www.instagram.com/"><img src="Instagram.png"></a>
+            <a href="https://www.youtube.com/"><img src="Youtube.png"></a>
+            <a href="https://www.google.co.th/"><img src="Google.png"></a>
+            <a href="https://www.tiktok.com/"><img src="Tiktok.png"></a>
+            <a href=""></a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="text/javascript">
+        $(document).ready(function() {
+            $(".input").on("fucus",function() {
+                $(this).addClass("fucus");
+            });
+
+            $(".input").on("blur", function() {
+                if($(this).val() == "")
+                $(this).removeClass("fucus");
+
+                if($("#username").val() != "" && $("#password").val() != "")
+                    $("#lpgo").addClass("change-color");
+                else
+                    $("#logo").removeClass("change-color");
+
+            });
+        });
+    </script>    
+</body>
+</html>

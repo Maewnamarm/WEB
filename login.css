@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(125deg,#f1c40f,#d35400);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+.nav-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+nav { 
+  position: fixed;
+  width: 100%;
+  background-color: #FD6A02;
+  justify-content: center;
+}
+
+
+.logo {
+    font-size: 2rem;
+    color: #000;
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li{
+    margin:  1rem;
+}
+
+.menu li a{
+    color: #000;
+    text-decoration: none;
+}
+
+.menu input{
+   background-color: #FFFFFF;
+   border-radius: 20px;
+   margin-right: 25px;
+   padding: 10px;
+   padding-right: 25px;
+   height: 25px;
+}
+
+.profile{
+  margin: 1rem;
+  list-style: none;
+
+}
+
+ul.menu a{
+  font-size: 20px;
+}
+
+
+.search {
+    border-radius: 20px;
+}
+
+.card {
+    position: relative;
+    height: 580px;
+    width: 360px;
+    background-image: linear-gradient(90deg,#95a5a6,#bdc3c7);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(0,0,0.5);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sign-in {
+    position: absolute;
+    top: -40px;
+    left: 55px;
+    transform: translate(15%);
+    height: 80px;
+    width: 250px;
+    background: #333;
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#logo {
+    font-size: 7rem;
+    color: #333;
+    margin-bottom: 40px;
+    transition: .5s;
+}
+
+.login-form {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.login-form span::before {
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    color: #bdc3c7;
+    transition: .5s;
+    opacity: 1;
+}
+
+#logo-input {
+    margin: 0 20px;
+    padding-right: 1.5rem;
+    border-right: 2px solid #bdc3c7;
+}
+
+.input {
+    height: 35px;
+    width: 100%;
+    border: none;
+    font-size: 1.2rem;
+    outline: none;
+    background: transparent;
+    z-index: 1;
+    color: #d35400;
+}
+
+a {
+    text-decoration: none;
+    color: #d35400;
+}
+
+.btn-submit {
+    margin: 20px 0;
+    padding: 15px 0;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(120deg,#f1c40f,#d35400,#f1c40f);
+    background-size: 200%;
+    font-size: 1.5rem;
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-position: right;
+}
+
+.fucus + span::before {
+    opacity: 0;
+}
+
+.change-color {
+    color: #e67e22 !important;
+}
+
+footer {
+    position: fixed;
+    background-image: linear-gradient(100deg,#F57D1F,);
+    background-color: #F57D1F;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgb(0, 0 , 0, 0.1);
+    width: 100%;
+    bottom: 0;
+    
+}
+
+footer div {
+    margin-bottom: 5px;
+}
+
+footer img {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px; 
+}
+
+footer a {
+    color: #d35400;
+    text-decoration: none;
+    margin:  0 10px;
+
+}
+
+footer a:hover {
+    color: white;
+}
+

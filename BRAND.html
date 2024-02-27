@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="Home.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="Home.js"></script>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-container">
+      <a href="Home.html">
+        <img src="Logo1.png" class="logonav">
+      </a>
+      
+      <input type="text"  placeholder="Search something...">
+      <a href="Home.html">หน้าหลัก</a>
+      <a href="Home.html">ประเภทเครื่องดื่ม</a>
+      <a href="BRAND.html">แบรนด์เครื่องดื่ม</a>
+      <a href="4">ความรู้เพิ่มเติม</a>
+      <a href="5">โปรโมชัน</a>
+      <a href="6">คำถามเพิ่มเติม</a>
+      <div class="nav-profile">
+        <p class="nav-profile-name">Bearbug</p>
+        <div class="nav-profile-cart">
+          <div class="cartcount">
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+    
+    <div class="container">
+      <div class="sidebar">
+        
+  
+        <a href="BRAND.html" class="sidebar-items">
+            Soft drinks
+        </a>
+        <a href="Milk and yogurtB.html" class="sidebar-items">
+            Milk and Yogurt
+        </a>
+        <a href="CoffeeB.html" class="sidebar-items">
+            Coffee
+        </a>
+        <a href="TeaB.html" class="sidebar-items">
+            Tea
+        </a>
+        <a href="Fruit juiceB.html" class="sidebar-items">
+            Fruit juice
+        </a>
+        <a href="Energy drinksB.html" class="sidebar-items">
+            Energy drinks
+        </a>
+        <a href="SyrupB.html" class="sidebar-items">
+            Syrup
+        </a>
+        <a href="WATER AND MINERAL WATERB.html" class="sidebar-items">
+            Water and Mineral water
+        </a>
+        <a href="Alcoholic beveragesB.html" class="sidebar-items">
+            Alcoholic beverages
+        </a>
+      </div>
+      <div class="product">
+        <div class="product-items">
+          <img class="product-img" src="https://logodix.com/logo/1953328.png" alt=""  >
+          <p style="font-size: 1.2vw;"><a href="cocola.html">Coke</p></a>
+          <p stlye="font-size: 1vw;"></p>
+        </div>
+        <div class="product-items">
+          <img class="product-img" src="http://www.industrybiznews.com/wp-content/uploads/2018/01/%E0%B9%80%E0%B8%AD%E0%B8%AA.jpg" alt="">
+          <p style="font-size: 1.2vw;"><a href="ESTB.html">เอส โคล่า</p></a>
+          <p stlye="font-size: 1vw;"></p>
+        </div>
+        <div class="product-items">
+          <img class="product-img" src="https://1000logos.net/wp-content/uploads/2021/03/Mirinda-Logo-2017.png" alt="">
+          <p style="font-size: 1.2vw;"><a href="MIRINDA B.html">มิรินด้า </p></a>
+          <p stlye="font-size: 1vw;"></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="modal" style="display: none;">
+      <div class="modal-bg"></div>
+      <div class="modal-page">
+        <h2>Detail</h2>
+        <br>
+        <div class="modaldesc-content">
+          <img class="modaldesc-img" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
+          <div class="modaldesc-detail">
+            <p style="font-size: 1.5vw;">Product name</p>
+            <p style="font-size: 1.2vw;">500 THB</p>
+            <br>
+            <p style="color: #adadad;">Lorem iaudantium harum doloremque alias. Quae, vel ipsum quasi, voluptas, sit optio nemo magni numquam non dicta voluptates porro! Vero eveniet numquam sit aut vel eligendi officiis iste tenetur expedita. Delectus vero quibusdam adipisci in. Esse.</p>
+            <br>
+            <div class="btn-control">
+              <button class="btn">
+                Close
+              </button>
+              <button class="btn btn-buy">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="modal" style="display: none;">
+      <div class="modal-bg"></div>
+      <div class="modal-page">
+        <h2>My cart</h2>
+        <br>
+        <div class="cartlist">
+          <div class="cartlist-items">
+            <div class="cartlist-left">
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
+              <div class="cartlist-detail">
+                <p style="font-size: 1.5vw;">Product name</p>
+                <p style="font-size: 1.2vw;">500 THB</p>
+              </div>
+            </div>
+            <div class="cartlist-right">
+              <p class="btnc">-</p>
+              <p style="margin: 0 20px;">1</p>
+              <p class="btnc">+</p>
+            </div>
+          </div>
+          <div class="cartlist-items">
+            <div class="cartlist-left">
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
+              <div class="cartlist-detail">
+                <p style="font-size: 1.5vw;">Product name</p>
+                <p style="font-size: 1.2vw;">500 THB</p>
+              </div>
+            </div>
+            <div class="cartlist-right">
+              <p class="btnc">-</p>
+              <p style="margin: 0 20px;">1</p>
+              <p class="btnc">+</p>
+            </div>
+          </div>
+          <div class="cartlist-items">
+            <div class="cartlist-left">
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
+              <div class="cartlist-detail">
+                <p style="font-size: 1.5vw;">Product name</p>
+                <p style="font-size: 1.2vw;">500 THB</p>
+              </div>
+            </div>
+            <div class="cartlist-right">
+              <p class="btnc">-</p>
+              <p style="margin: 0 20px;">1</p>
+              <p class="btnc">+</p>
+            </div>
+          </div>
+          <div class="cartlist-items">
+            <div class="cartlist-left">
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
+              <div class="cartlist-detail">
+                <p style="font-size: 1.5vw;">Product name</p>
+                <p style="font-size: 1.2vw;">500 THB</p>
+              </div>
+            </div>
+            <div class="cartlist-right">
+              <p class="btnc">-</p>
+              <p style="margin: 0 20px;">1</p>
+              <p class="btnc">+</p>
+            </div>
+          </div>
+          <div class="cartlist-items">
+            <div class="cartlist-left">
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
+              <div class="cartlist-detail">
+                <p style="font-size: 1.5vw;">Product name</p>
+                <p style="font-size: 1.2vw;">500 THB</p>
+              </div>
+            </div>
+            <div class="cartlist-right">
+              <p class="btnc">-</p>
+              <p style="margin: 0 20px;">1</p>
+              <p class="btnc">+</p>
+            </div>
+          </div>
+          <div class="cartlist-items">
+            <div class="cartlist-left">
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
+              <div class="cartlist-detail">
+                <p style="font-size: 1.5vw;">Product name</p>
+                <p style="font-size: 1.2vw;">500 THB</p>
+              </div>
+            </div>
+            <div class="cartlist-right">
+              <p class="btnc">-</p>
+              <p style="margin: 0 20px;">1</p>
+              <p class="btnc">+</p>
+            </div>
+          </div>
+  
+        </div>
+        <div class="btn-control">
+          <button class="btn">
+            Cancel
+          </button>
+          <button class="btn btn-buy">
+            Buy
+          </button>
+        </div>
+      </div>
+    </div>
+  
+  </body>
+</html>
